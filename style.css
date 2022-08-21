@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Playfair Display Black';
+    src: url(./fonts/PlayfairDisplay-Black.otf),
+        url(./fonts/PlayfairDisplay-Black.ttf),
+        url(./fonts/PlayfairDisplay-Black.otf),
+        url(./fonts/PlayfairDisplay-Black.otf);
+}
+
+.container{
+    width: 90%;
+    max-width: 1128px;
+    margin: 0 auto;
+    border: 1px solid #824936;
+}
+
+.header{
+    min-height: 660px;
+    background-color: #F3EED9;
+    text-align: center;
+    padding-block-start: 250px;
+    width: 100%;
+}
+
+h1{
+    font-size: clamp(14px, 2vw, 18px);
+    font-family: 'Roboto';
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+h2{
+    font-size: clamp(24px, 3vw, 60px);
+    font-family: 'Playfair Display Black';
+    margin-inline: 15%;
+    font-weight: normal;
+    
+}
+
+p{
+    font-size:  clamp(14px, 1.4vw, 18px);
+    font-weight: 400;
+    font-family: 'Roboto';
+    color: #222C2A;
+    line-height: 1.5;
+}
+
+.subtitle{
+    font-size: clamp(18px, 1.5vw,36px);
+    font-family: 'Playfair Display Black';
+}
+
+.flex-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2.5em;
+}
+
+.accent{
+    color: #824936;
+}
+
+section:nth-child(2){
+    min-height: 400px;
+    padding-block: 70px;
+}
+section h3{
+    text-align: center;
+    margin-bottom: 35px;
+    color: #F3EED9;
+}
+
+section:nth-child(3){
+    min-height: 200px;
+    padding-block: 80px;
+    background-color: #222C2A;
+}
+section:nth-child(3) h3{
+    color: #F3EED9;
+    margin-bottom: 35px;
+    text-align: start;
+}
+.content p{
+   color: #F3EED9;
+}
+
+.content h3{
+    color: #F3EED9;
+}
+
+
+section:nth-child(4){
+    min-height: 200px;
+    padding-block: 80px;
+    background-color: #824936;
+}
+section:nth-child(4) h3{
+    color: #F3EED9;
+    margin-bottom: 35px;
+    text-align: start;
+}
+.sub-container{
+    width: 43%;
+}
+
+.sub-container-2{
+    width: 38%;
+}
+
+.sub-container img,
+.sub-container-2 img{
+    width: 100%;
+}
+
+
+@media (max-width: 45em) {
+    .flex-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .sub-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .sub-container-2{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    section:nth-child(3) h3,
+    section:nth-child(4) h3{
+        text-align: center;
+    }
+
+    .header{
+        min-height: 450px;
+    }
+}
